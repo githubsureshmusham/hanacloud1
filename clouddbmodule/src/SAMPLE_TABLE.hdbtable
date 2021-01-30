@@ -1,0 +1,1 @@
+column table "cloudmta.clouddbmodule::SAMPLETABLE" (ID VARCHAR(50),FIRSTNAME VARCHAR(250))

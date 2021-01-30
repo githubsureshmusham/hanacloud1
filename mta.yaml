@@ -1,0 +1,16 @@
+ID: cloudmta
+_schema-version: '2.1'
+version: 0.0.1
+
+modules:
+ - name: clouddbmodule
+   type: hdb
+   path: clouddbmodule
+   requires:
+    - name: hdi_clouddbmodule
+
+resources:
+ - name: hdi_clouddbmodule
+   properties:
+      hdi-container-name: ${service-name}
+   type: com.sap.xs.hdi-container
